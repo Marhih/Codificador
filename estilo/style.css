@@ -6,7 +6,7 @@
 }
 /*Estilo coro do site*/
 body {
-  background-image: url(/imagens/morro.png);
+  background-image: linear-gradient(#345da7, #eee);
 }
 /*Estilo do header*/
 .logo {
