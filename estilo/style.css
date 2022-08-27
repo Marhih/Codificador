@@ -1,0 +1,246 @@
+/*Estilo geral*/
+* {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+/*Estilo coro do site*/
+body {
+  background-image: url(/imagens/morro.png);
+}
+/*Estilo do header*/
+.logo {
+  position: absolute;
+  margin-left: 1%;
+  margin-top: 1%;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #eee;
+  text-shadow: 3px 2px 1px #707070;
+}
+/*Estilo do conteúdo principal*/
+main {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  overflow: auto;
+  background: none;
+}
+/*Área de digitar o texto*/
+.digitar {
+  width: 50%;
+  height: 80%;
+  margin-top: 8%;
+  /*Efeito de vidro fosco como background*/
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 32px;
+}
+.texto-digitado {
+  margin-top: 1%;
+  margin-left: 5%;
+  color: #eee;
+}
+.informacao {
+  font-size: 12px;
+}
+/*Botões de Criptografar e descriptografar*/
+.botoes {
+  margin-top: 25%;
+  margin-bottom: 1%;
+  padding: 5% 1%;
+  text-align: center;
+}
+.criptografar, .descriptografar {
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 0 2%;
+  padding: 2% 2%;
+}
+.criptografar {
+  background-color: #345da7;
+  color: #eee;
+}
+.criptografar:hover {
+  transform: scale(1.2);
+}
+.descriptografar {
+  background-color: #eee;
+  color: #345da7;
+}
+.descriptografar:hover {
+  transform: scale(1.2);
+}
+/*Área do texto digitado e codificado*/
+.mensagem-box {
+  position: absolute;
+  width: 350px;
+  height: 80%;
+  left: 700px;
+  top: 40px;
+  padding: 30px 10px 10px 10px;
+  margin-right: 50px;
+  /*Efeito de vidro fosco como background*/
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 32px;
+}
+.mensagem {
+  background-image:url(/imagens/menino.png);
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+.mensagem:focus{
+  background-image: none;
+}
+
+.texto {
+  display: block;
+  font-size: 25px;
+  text-align: center;
+  color: #eee;
+}
+.texto-menor {
+  font-size: 16px;
+  text-align: center;
+  color: #345da7;
+}
+/*Botão de copiar*/
+#div-aparece {
+  position: relative;
+  bottom: 1%;
+  left: 35%;
+}
+.copiar {
+  display: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 0 2%;
+  padding: 2% 2%;
+  background-color: #345da7;
+  color: #eee;
+}
+.copiar:hover {
+  transform: scale(1.2);
+}
+/*Footer*/
+footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  background-color: #345da7;
+}
+.copyright {
+  color: #eee;
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+/*Design responsivo*/
+@media screen and (max-width: 1250px) {
+  main {
+    width: 800px;
+  }
+  .mensagem-box{
+    position: relative;
+    order: 1;
+    width: 100%;
+    height: 80%;
+    left: 5%;
+  }
+  .digitar{
+    order: 0;
+    width: 100%;
+  }
+  .texto-digitado, .mensagem {
+    width: 90%;
+  }
+  .mensagem {
+    background-position: center;
+  }
+
+}
+/*Dessign responsivo para tablet*/
+@media screen and (max-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+  }
+  .mensagem-box{
+    position: relative;
+    order: 1;
+    width: 100%;
+    left: 0;
+  }
+  .digitar{
+    order: 0;
+    width: 100%;
+  }
+  .botoes {
+    margin-top: 10%;
+  }
+  .texto-digitado, .mensagem {
+    width: 90%;
+  }
+  .mensagem {
+    background-position: center;
+    top: 1%;
+  }
+}
+@media screen and (max-width: 850px) {
+  main {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 750px) {
+  main {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 650px) {
+  main {
+    width: 500px;
+  }
+  .digitar{
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 550px) {
+  main {
+    width: 400px;
+  }
+  .digitar{
+    margin-top: 15%;
+  }
+}
+@media screen and (max-width: 450px) {
+  main {
+    width: 300px;
+  }
+  .digitar{
+    margin-top: 20%;
+  }
+/*Design responsivo para celular*/
+@media screen and (max-width: 350px) {
+  main {
+    width: 200px;
+  }
+  .digitar{
+    margin-top: 25%;
+  }
+}
