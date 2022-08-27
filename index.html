@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Codificador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/reset.css">
+  </head>
+  <body>
+
+  <header>
+    <h1 class="logo">Codificador</h1>
+  </header>
+
+  <main>
+
+    <section class="digitar">
+      <textarea class="texto-digitado" rows="10" cols="30" placeholder="Digite aqui o seu texto..."></textarea>
+      <div class="botoes">
+        <h6 class="informacao">⚠ Apenas letras minúsculas e sem acento</h6><br>
+        <button class="criptografar" onclick="btnEncriptar()">
+          Criptografar
+        </button>
+        <button class="descriptografar" onclick="btnDescriptografar()">
+          Descriptografar
+        </button>
+      </div>
+    </section>
+
+    <section class="mensagem-box">
+      <textarea class="mensagem" rows="18" cols="25" readonly></textarea>
+      <div>
+        <h2 class="texto">Nenhuma mensagem encontrada</h2>
+        <p class="texto-menor">Digite uma mensagem para criptografar</p>
+      </div>
+      <div id="div-aparece">
+        <button class="copiar" onclick="copiar()">
+          Copiar
+        </button>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p class="copyright">&copy;Copyright Marielen Rezende</p>
+  </footer>
+<script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
