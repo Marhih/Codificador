@@ -6,7 +6,7 @@
 }
 /*Estilo coro do site*/
 body {
-  background-image: url(/imagens/morro.png);
+  background-image: url(../imagens/morro.png);
 }
 /*Estilo do header*/
 .logo {
@@ -98,7 +98,7 @@ textarea {
   border-radius: 32px;
 }
 .mensagem {
-  background-image:url(/imagens/menino.png);
+  background-image:url(../imagens/menino.png);
   background-repeat: no-repeat;
   color: #FFFFFF;
 }
